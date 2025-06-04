@@ -1,0 +1,16 @@
+from itertools import combinations
+
+n = int(input())
+letters = input().split()
+k = int(input())
+
+all_combinations = list(combinations(letters, k))
+total = len(all_combinations)
+
+count = 0
+for combo in all_combinations:
+    if 'a' in combo:
+        count += 1
+
+probability = count / total
+print(f"{probability:.4f}")
