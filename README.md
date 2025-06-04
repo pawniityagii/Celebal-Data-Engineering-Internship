@@ -40,6 +40,6 @@ Celebal-Data-Engineering-Internship/
 ---
 
 👀 **Coming Soon:**  
-Task-2 and more as the internship progresses...
+Week-2 and more as the internship progresses...
 
 ---
