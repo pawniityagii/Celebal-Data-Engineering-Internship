@@ -6,7 +6,7 @@
 
 ---
 
-## ✅ Task-1: Python Practice Problems 🐍
+## ✅ Week-1(Assignment): Python Practice Problems 🐍
 
 | Sub-Task No. | Title/Topic                            | Description                                                                 |
 |--------------|-----------------------------------------|-----------------------------------------------------------------------------|
@@ -26,7 +26,7 @@
 
 Celebal-Data-Engineering-Internship/
 │
-├── Task-1/
+├── Week-1 Assignment/
 │ ├── task-1.1
 │ ├── task-1.2
 │ ├── task-1.3
