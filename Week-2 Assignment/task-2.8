@@ -1,0 +1,19 @@
+import re
+
+def is_valid_regex(test_cases):
+    results = []
+    for s in test_cases:
+        try:
+            re.compile(s)
+            results.append("True")
+        except re.error:
+            results.append("False")
+    return results
+
+T = int(input().strip())
+test_cases = [input().strip() for _ in range(T)]
+
+results = is_valid_regex(test_cases)
+
+for result in results:
+    print(result)
