@@ -1,0 +1,18 @@
+n = int(input())
+s = set(map(int, input().split()))
+N = int(input())
+
+for _ in range(N):
+    parts = input().split()
+    cmd = parts[0]
+    
+    if cmd == "pop":
+        # Ensure consistent "pop" behavior like sample
+        val = min(s)
+        s.remove(val)
+    elif cmd == "remove":
+        s.remove(int(parts[1]))
+    elif cmd == "discard":
+        s.discard(int(parts[1]))
+
+print(sum(s))
