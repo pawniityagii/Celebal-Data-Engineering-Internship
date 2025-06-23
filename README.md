@@ -39,18 +39,18 @@
 
 ## ✅ Week-3(Assignment): SQL Practice Problems 💾
 
-Sub-Task | Sub-Task No. | Title/Topic                             | Description                                                          |
-| ------------ | ------------------------------------------------|-------------------------------------------------------------------------------  |
-| 3.1          | 🏙️ Query All Columns from CITY Table           | Query all columns for every row from CITY table                               |
-| 3.2          | 🆔 Query CITY Row by ID                        | Query all columns for CITY where ID is 1661                                  |
-| 3.3          | 🔠 Employee Names Alphabetical Order           | Query employee names in alphabetical order from Employee table               |
-| 3.4          | 🇯🇵 Japanese Cities from CITY Table              | Query all columns for cities in CITY table with COUNTRYCODE 'JPN'               |
-| 3.5          | 🏢 CITY and STATE from STATION Table           | Query CITY and STATE columns from STATION table                              |
-| 3.6          | 🏙️ Distinct CITY Names with Even IDs           | Query distinct CITY names from STATION with even ID numbers                   |
-| 3.7          | ➖ CITY Total vs Distinct Count Difference     | Find difference between total and distinct CITY entries from STATION        |
-| 3.8          | 🔤 Shortest and Longest CITY Names             | Find cities with shortest and longest names from STATION table               |
-| 3.9          | 📊 Average CITY Population Rounded Down        | Query average population for all cities in CITY table rounded down           |
-| 3.10         | 🌍 Continents with Average CITY Population     | Query continents with their average city populations rounded down using JOIN |
+| Sub-Task No. | Title/Topic                            | Description                                                                  |
+| ------------ | -------------------------------------- | ---------------------------------------------------------------------------- |
+| 3.1          | 🏙️ Query All CITY Rows                | Query all columns for every row from CITY table                              |
+| 3.2          | 🆔 Query CITY by ID                    | Query all columns for CITY where ID is 1661                                  |
+| 3.3          | 🔤 Alphabetical Employee Names         | Query employee names in alphabetical order from Employee table               |
+| 3.4          | 🇯🇵 Japanese Cities Query             | Query all columns for cities in CITY table with COUNTRYCODE 'JPN'            |
+| 3.5          | 🏢 CITY and STATE from STATION         | Query CITY and STATE columns from STATION table                              |
+| 3.6          | 🟰 Distinct Even-ID CITY Names         | Query distinct CITY names from STATION with even ID numbers                  |
+| 3.7          | ➖ CITY Count Difference                | Find difference between total and distinct CITY entries from STATION         |
+| 3.8          | 📏 Shortest & Longest CITY Names       | Find cities with shortest and longest names from STATION table               |
+| 3.9          | 📊 Average CITY Population Rounded     | Query average population for all cities in CITY table rounded down           |
+| 3.10         | 🌍 Continents with Avg CITY Population | Query continents with their average city populations rounded down using JOIN |
 
 
 ---
