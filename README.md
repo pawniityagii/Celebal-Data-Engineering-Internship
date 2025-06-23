@@ -39,8 +39,8 @@
 
 ## ✅ Week-3(Assignment): SQL Practice Problems 💾
 
-Sub-Task | Sub-Task No. | Title/Topic                                | Description                                                          |
-| ------------ | ------------------------------------------      | ----------------------------------------------------------------------------  |
+Sub-Task | Sub-Task No. | Title/Topic                             | Description                                                          |
+| ------------ | ------------------------------------------------|-------------------------------------------------------------------------------  |
 | 3.1          | 🏙️ Query All Columns from CITY Table           | Query all columns for every row from CITY table                               |
 | 3.2          | 🆔 Query CITY Row by ID                        | Query all columns for CITY where ID is 1661                                  |
 | 3.3          | 🔠 Employee Names Alphabetical Order           | Query employee names in alphabetical order from Employee table               |
