@@ -1,3 +1,4 @@
+CSV:
 import pandas as pd
 import sqlalchemy
 
@@ -5,3 +6,31 @@ engine = sqlalchemy.create_engine('mysql://user:password@host/dbname')
 query = "SELECT * FROM your_table"
 df = pd.read_sql(query, engine)
 df.to_csv('data.csv', index=False)
+
+
+Parquet:
+import pandas as pd
+import pyarrow.parquet as pq
+import pyarrow as pa
+
+df = pd.read_sql(query, engine)
+table = pa.Table.from_pandas(df)
+pq.write_table(table, 'data.parquet')
+
+
+Avro:
+from fastavro import writer, parse_schema
+import json
+
+schema = {
+    "type": "record",
+    "name": "Example",
+    "fields": [
+        {"name": "column1", "type": "string"},
+        {"name": "column2", "type": "int"},
+    ]
+}
+
+records = [{"column1": "value1", "column2": 1}, {"column1": "value2", "column2": 2}]
+with open('data.avro', 'wb') as out_file:
+    writer(out_file, schema, records)
