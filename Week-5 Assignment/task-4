@@ -1,0 +1,20 @@
+import pandas as pd
+import sqlalchemy
+
+# Connect to source and destination databases
+source_engine = sqlalchemy.create_engine('mysql://user:password@source_host/dbname')
+destination_engine = sqlalchemy.create_engine('mysql://user:password@destination_host/dbname')
+
+# Define which tables and columns to copy
+selected_columns = {
+    'table1': ['column1', 'column2'],
+    'table2': ['column3', 'column4']
+}
+
+for table, columns in selected_columns.items():
+    # Extract only the selected columns
+    query = f"SELECT {', '.join(columns)} FROM {table}"
+    df = pd.read_sql(query, source_engine)
+
+    # Write data to the destination
+    df.to_sql(table, destination_engine, if_exists='replace', index=False)
