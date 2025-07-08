@@ -1,0 +1,17 @@
+import pandas as pd
+import sqlalchemy
+
+# Connect to source and destination databases
+source_engine = sqlalchemy.create_engine('mysql://user:password@source_host/dbname')
+destination_engine = sqlalchemy.create_engine('mysql://user:password@destination_host/dbname')
+
+# Get list of all tables in the source database
+table_names = source_engine.execute("SHOW TABLES").fetchall()
+
+for table_name in table_names:
+    # Extract data from source
+    query = f"SELECT * FROM {table_name[0]}"
+    df = pd.read_sql(query, source_engine)
+
+    # Write data to the destination
+    df.to_sql(table_name[0], destination_engine, if_exists='replace', index=False)
