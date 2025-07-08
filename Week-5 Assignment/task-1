@@ -1,0 +1,7 @@
+import pandas as pd
+import sqlalchemy
+
+engine = sqlalchemy.create_engine('mysql://user:password@host/dbname')
+query = "SELECT * FROM your_table"
+df = pd.read_sql(query, engine)
+df.to_csv('data.csv', index=False)
